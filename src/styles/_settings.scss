@@ -1,21 +1,31 @@
 @font-face {
-  font-family: "Poppins";
+  font-family: "Poppins-Medium";
   src: url(../assets/fonts/poppins/Poppins-Medium.ttf);
 }
 
-$font-poppins: "Poppins",
+@font-face {
+  font-family: "Inter-Regular";
+  src: url(../assets/fonts/inter/Inter-Regular.ttf);
+}
+
+$font1: "Poppins-Medium",
 sans-serif;
+$blue : #3669A2;
+$blue2 : #1d4778;
 $dark-blue: #2C3E50;
 $dark-blue-hover1: #34485c;
 $dark-blue-hover2: #243546;
 $turquoise: #18BC9C;
 $turquoise-hover1: #25cdab;
 $turquoise-hover2: #1f9f85;
-$black: #303030; //#282c34;
+$black: #303030;
 $black-hover: #444444;
 $white: rgb(243, 243, 243);
+$white2: #FBFAFD;
 $light-grey: #EEEEEE;
 $light-grey2: #e6e6e6;
+$grey: #E9E9E9;
+$dark-grey: #7a7a7a;
 
 @mixin verticalCenter {
   display: flex;
@@ -30,23 +40,77 @@ $light-grey2: #e6e6e6;
 }
 
 body {
-  display: flex;
-  align-items: center;
   width: 100%;
-  background: $light-grey;
-  font-family: $font-poppins;
+  min-height: 100vh;
+  background: $white;
+  font-family: $font1;
+}
+
+#root {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
 .main {
-  width: 100%;
+  margin: 0 20vw;
+  width: 60vw;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   top: 50px;
+
+  &.no-nav-bar {
+    width: 60%;
+    top: 0px;
+  }
 }
+
+
 
 li {
   list-style-type: none;
+}
+
+.rewriting-ressources-container,
+.rewriting-home-container,
+.rewriting-software-container,
+.ressources-cards-container,
+.industrial-applications-container {
+  width: 100%;
+}
+
+@media(max-width: 1400px) {
+  .main {
+    margin: 0 12.5vw;
+    width: 75vw;
+
+    &.no-nav-bar {
+      width: 75%;
+    }
+  }
+}
+
+@media(max-width: 800px) {
+  .main {
+    margin: 0 7.5vw;
+    width: 85vw;
+
+    &.no-nav-bar {
+      width: 85%;
+    }
+  }
+}
+
+@media(max-width: 650px) {
+  .main {
+    margin: 0 5vw;
+    width: 90vw;
+
+    &.no-nav-bar {
+      width: 90%;
+    }
+  }
 }

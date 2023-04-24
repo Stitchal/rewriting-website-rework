@@ -1,18 +1,28 @@
 .rewriting-navigation-container {
+    z-index: 1000;
     position: fixed;
     display: flex;
-    width: 100%;
+    height: auto;
     min-height: 50px;
     background: $white;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 2rem;
     padding: 5px;
+    width: 100vw;
+
+    .navbar {
+        display: flex;
+        width: 60vw;
+    }
 
     .nav-items {
+        width: 70%;
         display: flex;
         flex-direction: row;
+        align-items: start;
         gap: 1rem;
+        height: 35px;
 
         .nav-link {
             // text-transform: uppercase;
@@ -22,6 +32,19 @@
             transition: 0.5s;
             border-radius: 4px;
 
+            &.selected {
+                // border-bottom: 4px solid $turquoise;
+                // border-radius: 4px 4px 0 0;
+                // color: $black-hover;
+                background: $turquoise;
+                color: $white;
+
+                &:hover {
+                    background: $turquoise;
+                    color: $white;
+                }
+            }
+
             &:hover {
                 background: $light-grey2;
                 color: $black-hover;
@@ -29,36 +52,107 @@
         }
     }
 
-    .bars {
-        display: none;
+    .logos {
+        width: 30%;
+        display: flex;
+        justify-content: right;
+        align-items: stretch;
+        height: 35px;
+
+        img {
+            max-height: 100%;
+        }
+
+        a:first-child {
+            margin-right: 20px;
+        }
     }
 }
 
-@media(max-width: 700px) {
+.bars {
+    display: none;
+}
+
+.bars ul.nav-link.active {
+    background: green($color: #000000);
+}
+
+@media(max-width: 1400px) {
+    .rewriting-navigation-container {
+        .navbar {
+            width: 75vw;
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .rewriting-navigation-container {
+        .navbar {
+            width: 85vw;
+        }
+    }
+}
+
+
+@media(max-width: 650px) {
     .rewriting-navigation-container {
         position: fixed;
-        width: 100%;
 
         .nav-items {
-            width: 100%;
+            display: none;
+            height: 100vh;
+            width: 100vw;
             flex-direction: column;
-            justify-items: center;
+            justify-content: space-evenly;
             align-items: center;
             gap: 0.5rem;
+
+            &.active {
+                height: 100vh;
+                display: flex;
+                opacity: 1;
+                transition: opacity 0.5s ease-in-out;
+
+                li {
+                    font-size: 30px;
+                }
+            }
+
+            .nav-link {
+                text-align: center;
+                padding: 15px;
+                width: 300px;
+            }
+
+        }
+
+        .logos {
+            display: none;
         }
 
         .bars {
             display: block;
+            position: fixed;
+            top: 10px;
+            left: 10px;
             height: auto;
             width: 22px;
             cursor: pointer;
 
             .bar {
-                height: 2px;
+                height: 3px;
                 width: 100%;
-                background: #fff;
+                background: $dark-blue;
                 margin: 4px;
             }
+
+            .bar:first-child {
+                background-color: $turquoise;
+            }
+        }
+
+        .logos {
+            display: none;
         }
     }
 }

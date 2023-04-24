@@ -3,7 +3,7 @@ import SplashPageNavigation from "../components/SplashPageNavigation";
 
 const SplashPage = () => {
   return (
-    <div>
+    <div className="splash-page-container">
       <SplashPageNavigation />
     </div>
   );

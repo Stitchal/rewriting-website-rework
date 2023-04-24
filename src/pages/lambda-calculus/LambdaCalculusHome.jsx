@@ -1,7 +1,7 @@
 import React from "react";
 
 const LambdaCalculusHome = () => {
-  return <div></div>;
+  return <div>In development.</div>;
 };
 
 export default LambdaCalculusHome;
