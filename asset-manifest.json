@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/rewriting-website-rework/static/css/main.b4eadb63.css",
+    "main.js": "/rewriting-website-rework/static/js/main.300befbf.js",
+    "static/media/wordcloud-7.png": "/rewriting-website-rework/static/media/wordcloud-7.eab1d49f0a593861152e.png",
+    "static/media/Inter-Regular.ttf": "/rewriting-website-rework/static/media/Inter-Regular.e89cb19905e7db5591b0.ttf",
+    "static/media/Poppins-Medium.ttf": "/rewriting-website-rework/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
+    "static/media/ifip.png": "/rewriting-website-rework/static/media/ifip.929aebc63a0ff2436a0e.png",
+    "index.html": "/rewriting-website-rework/index.html",
+    "main.b4eadb63.css.map": "/rewriting-website-rework/static/css/main.b4eadb63.css.map",
+    "main.300befbf.js.map": "/rewriting-website-rework/static/js/main.300befbf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4eadb63.css",
+    "static/js/main.300befbf.js"
+  ]
+}
