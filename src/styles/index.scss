@@ -1,4 +1,5 @@
 @import "./settings";
+
 @import "./components/rewritingnavigation";
 @import "./components/splashpagenavigation";
 @import "./components/title";
@@ -7,9 +8,9 @@
 @import "./components/path";
 @import "./components/tag";
 @import "./components/footer";
-@import "./components/industrialapplicationcard.scss";
-@import "./components/industrialapplications.scss";
-@import "./pages/rewrittingressources";
+@import "./components/industrialapplicationcard";
 
-
+@import "./pages/industrialapplicationspage";
+@import "./pages/_rewrittingressourcespage";
+@import "./pages/_intranetwritepostpage";
 @import "./pages/splashpage";

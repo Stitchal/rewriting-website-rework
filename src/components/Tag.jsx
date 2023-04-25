@@ -17,7 +17,7 @@ const Tag = ({ name }) => {
 
   return (
     <div
-      className="tag-container"
+      className={"tag-container " + name.toLowerCase()}
       style={{
         backgroundColor: color,
         color: name === "Logic" ? "rgb(243, 243, 243)" : "",

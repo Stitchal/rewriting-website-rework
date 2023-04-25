@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import logo_fscd from "../assets/img/fscd.png";
 import logo_ifip from "../assets/img/ifip.png";
 
 const RewritingNavigation = () => {
   const [isActive, setIsActive] = useState(false);
-  const [selectedOption, setSelectedOption] = useState("");
 
   function toggleMenu() {
     setIsActive(!isActive);
@@ -26,15 +25,15 @@ const RewritingNavigation = () => {
           <NavLink
             to="/rewriting"
             className={`nav-link ${
-              location.pathname == "/rewriting" ? "selected" : ""
+              location.pathname === "/rewriting" ? "selected" : ""
             }`}
           >
-            <li>Introduction</li>
+            <li>Rewriting</li>
           </NavLink>
           <NavLink
             to="/rewriting/software"
             className={`nav-link ${
-              location.pathname == "/rewriting/software" ? "selected" : ""
+              location.pathname === "/rewriting/software" ? "selected" : ""
             }`}
           >
             <li>Software</li>
@@ -42,7 +41,7 @@ const RewritingNavigation = () => {
           <NavLink
             to="/rewriting/ressources"
             className={`nav-link ${
-              location.pathname == "/rewriting/ressources" ? "selected" : ""
+              location.pathname === "/rewriting/ressources" ? "selected" : ""
             }`}
           >
             <li>Ressources</li>

@@ -1,0 +1,62 @@
+.industrial-application-card {
+    display: flex;
+    justify-content: left;
+    gap: 3rem;
+    border-radius: 10px;
+    border: 2px solid #C2C2C2;
+    background: $white;
+    padding: 10px;
+    height: auto;
+    transition: 0.5s;
+    width: 700px;
+
+    .name {
+        width: 50%;
+        color: #3E98DB;
+        display: flex;
+    }
+
+    .tags-container {
+        width: 50%;
+        align-items: end;
+        justify-content: right;
+        flex-direction: row;
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    &:hover {
+        background: $light-grey2;
+
+        .name {
+
+            text-decoration: underline;
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .industrial-application-card {
+        gap: 1rem;
+        width: 200px;
+        min-height: 200px;
+        flex-direction: column;
+
+        .name,
+        .tags-container {
+            width: 100%;
+        }
+
+        .tags-container {
+            align-items: start;
+            flex-direction: column;
+        }
+    }
+}
+
+@media(max-width: 485px) {
+    .industrial-application-card {
+        width: 100%;
+        min-height: 100%;
+    }
+}

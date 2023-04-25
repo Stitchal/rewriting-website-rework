@@ -1,67 +1,74 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SplashPage from "./pages/SplashPage";
-import LambdaCalculusHome from "./pages/lambda-calculus/LambdaCalculusHome";
-import RewritingHome from "./pages/rewriting/RewritingHome";
-import RewritingSoftware from "./pages/rewriting/RewritingSoftware";
-import MailingList from "./pages/MailingList";
-import RewritingRessources from "./pages/rewriting/RewritingRessources";
+import LambdaCalculusMainPage from "./pages/lambda-calculus/LambdaCalculusMainPage";
+import RewritingMainPage from "./pages/rewriting/RewritingMainPage";
+import RewritingSoftwarePage from "./pages/rewriting/RewritingSoftwarePage";
+import MailingListPage from "./pages/MailingListPage";
+import RewritingRessourcesPage from "./pages/rewriting/RewritingRessourcesPage";
 import SplashPageNavigation from "./components/SplashPageNavigation";
-import OpenProblems from "./pages/OpenProblems";
-import LogicHome from "./pages/logic/LogicHome";
-import Authors from "./pages/Authors";
-import RewritingLearningRessources from "./pages/rewriting/ressources/RewritingLearningRessources";
-import RewritingExternalRessources from "./pages/rewriting/ressources/RewritingExternalRessources";
-import Books from "./pages/rewriting/ressources/learningressources/Books";
-import Surveys from "./pages/rewriting/ressources/learningressources/Surveys";
-import Courses from "./pages/rewriting/ressources/learningressources/Courses";
-import IndustrialApplications from "./pages/IndustrialApplications";
-import Login from "./pages/Login";
+import OpenProblemsPage from "./pages/OpenProblemsPage";
+import LogicMainPage from "./pages/logic/LogicMainPage";
+import AuthorsPage from "./pages/AuthorsPage";
+import RewritingLearningRessourcesPage from "./pages/rewriting/ressources/RewritingLearningRessourcesPage";
+import RewritingExternalRessourcesPage from "./pages/rewriting/ressources/RewritingExternalRessourcesPage";
+import RewritingBooksPage from "./pages/rewriting/ressources/learningressources/RewritingBooksPage";
+import RewritingSurveysPage from "./pages/rewriting/ressources/learningressources/RewritingSurveysPage";
+import RewritingCoursesPage from "./pages/rewriting/ressources/learningressources/RewritingCoursesPage";
+import IndustrialApplicationsPage from "./pages/IndustrialApplicationsPage";
+import LoginPage from "./pages/LoginPage";
+import IntranetPage from "./pages/intranet/IntranetPage";
+import IntranetWritePostPage from "./pages/intranet/IntranetWritePostPage";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<SplashPage />} />
-        <Route path="/rewriting" element={<RewritingHome />} />
-        <Route path="/lambda-calculus" element={<LambdaCalculusHome />} />
-        <Route path="/logic" element={<LogicHome />} />
-        <Route path="/mailing-list" element={<MailingList />} />
-        <Route path="/open-problems" element={<OpenProblems />} />
-        <Route path="/authors" element={<Authors />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/rewriting" element={<RewritingMainPage />} />
+        <Route path="/lambda-calculus" element={<LambdaCalculusMainPage />} />
+        <Route path="/logic" element={<LogicMainPage />} />
+        <Route path="/mailing-list" element={<MailingListPage />} />
+        <Route path="/open-problems" element={<OpenProblemsPage />} />
+        <Route path="/authors" element={<AuthorsPage />} />
         <Route
           path="/industrial-applications"
-          element={<IndustrialApplications />}
+          element={<IndustrialApplicationsPage />}
         />
+        <Route path="/intranet" element={<IntranetPage />} />
+        <Route path="/intranet/write-post" element={<IntranetWritePostPage />} />
+        <Route path="/login" element={<LoginPage />} />
 
-        <Route path="/rewriting/software" element={<RewritingSoftware />} />
-        <Route path="/rewriting/mailing-list" element={<MailingList />} />
-        <Route path="/rewriting/ressources" element={<RewritingRessources />} />
+        <Route path="/rewriting/software" element={<RewritingSoftwarePage />} />
+        <Route path="/rewriting/mailing-list" element={<MailingListPage />} />
+        <Route
+          path="/rewriting/ressources"
+          element={<RewritingRessourcesPage />}
+        />
         <Route
           path="/rewriting/ressources/learning-ressources"
-          element={<RewritingLearningRessources />}
+          element={<RewritingLearningRessourcesPage />}
         />
         <Route
           path="/rewriting/ressources/learning-ressources/books"
-          element={<Books />}
+          element={<RewritingBooksPage />}
         />
         <Route
           path="/rewriting/ressources/learning-ressources/surveys"
-          element={<Surveys />}
+          element={<RewritingSurveysPage />}
         />
         <Route
           path="/rewriting/ressources/learning-ressources/courses"
-          element={<Courses />}
+          element={<RewritingCoursesPage />}
         />
         <Route
           path="/rewriting/ressources/external-ressources"
-          element={<RewritingExternalRessources />}
+          element={<RewritingExternalRessourcesPage />}
         />
 
         <Route path="/*" element={<SplashPageNavigation />} />
-        <Route path="/rewriting/*" element={<RewritingHome />} />
-        <Route path="/lambda-calculus/*" element={<LambdaCalculusHome />} />
+        <Route path="/rewriting/*" element={<RewritingMainPage />} />
+        <Route path="/lambda-calculus/*" element={<LambdaCalculusMainPage />} />
       </Routes>
     </BrowserRouter>
   );

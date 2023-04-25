@@ -1,0 +1,81 @@
+.intranet-write-post-page {
+    .main {
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            gap: 1rem;
+
+
+            textarea {
+                font-family: 'Poppins-Medium';
+                padding: 15px;
+                outline: none;
+                border-radius: 5px;
+                resize: none;
+                font-size: 16px;
+                border-color: $dark-grey;
+
+                &.title {
+                    min-width: 70%;
+                }
+
+                &.content {
+                    min-width: 70%;
+                    min-height: 600px;
+                }
+
+                &:last-child {
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .tags-container {
+                width: 70%;
+                display: flex;
+                gap: 1rem;
+
+                input {
+                    display: none;
+
+                    +label .tag-container {
+                        transition: 0.5s;
+                        border: 2px solid $white;
+                    }
+
+                    &:checked+label .tag-container {
+                        border: 2px solid $black;
+                    }
+                }
+
+            }
+
+            .tag-container {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            input.submit {
+                display: flex;
+                font-family: 'Poppins-Medium';
+                background: $black;
+                font-size: 16px;
+                color: white;
+                padding: 5px 15px 5px 15px;
+                border: 0;
+                border-radius: 5px;
+                border: 2px solid $white;
+                transition: 0.5s;
+
+                &:hover {
+                    cursor: pointer;
+                    background: $grey;
+                    border: 2px solid $black;
+                }
+            }
+        }
+    }
+}
