@@ -13,7 +13,7 @@ const AuthorsPage = () => {
 
   const authorsPath = {
     name: "Authors",
-    path: "/authors",
+    path: "/rewriting-website-rework/authors",
   };
 
   const paths = [authorsPath];

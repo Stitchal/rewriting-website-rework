@@ -13,7 +13,7 @@ const OpenProblemsPage = () => {
 
   const openProblemsPath = {
     name: "Open problems",
-    path: "/open-problems",
+    path: "/rewriting-website-rework/open-problems",
   };
 
   const paths = [openProblemsPath];

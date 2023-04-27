@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 const IndustrialApplicationsPage = () => {
   const industrialApplicationPath = {
     name: "Industrial applications",
-    path: "/industrial-applications",
+    path: "/rewriting-website-rework/industrial-applications",
   };
 
   const paths = [industrialApplicationPath];

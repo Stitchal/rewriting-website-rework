@@ -14,21 +14,21 @@ const Courses = () => {
 
   const rewritingPath = {
     name: "Rewriting",
-    path: "/rewriting",
+    path: "/rewriting-website-rework/rewriting",
   };
 
   const ressourcesPath = {
     name: "Ressources",
-    path: "/rewriting/ressources",
+    path: "/rewriting-website-rework/rewriting/ressources",
   };
   const externalRessourcesPath = {
     name: "Learning ressources",
-    path: "/rewriting/ressources/learning-ressources",
+    path: "/rewriting-website-rework/rewriting/ressources/learning-ressources",
   };
 
   const coursesPath = {
     name: "Courses",
-    path: "/rewriting/ressources/learning-ressources/courses",
+    path: "/rewriting-website-rework/rewriting/ressources/learning-ressources/courses",
   };
 
   const paths = [

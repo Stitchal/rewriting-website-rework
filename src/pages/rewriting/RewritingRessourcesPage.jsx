@@ -10,12 +10,12 @@ const RewritingRessourcesPage = () => {
   //Paths
   const rewritingPath = {
     name: "Rewriting",
-    path: "/rewriting",
+    path: "/rewriting-website-rework/rewriting",
   };
 
   const ressourcesPath = {
     name: "Ressources",
-    path: "/rewriting/ressources",
+    path: "/rewriting-website-rework/rewriting/ressources",
   };
 
   const paths = [rewritingPath, ressourcesPath];
@@ -29,13 +29,13 @@ const RewritingRessourcesPage = () => {
         <Title title="Ressources" />
 
         <div className="ressources-cards-container">
-          <NavLink to="/rewriting/ressources/learning-ressources">
+          <NavLink to="/rewriting-website-rework/rewriting/ressources/learning-ressources">
             <Ressource
               ressourceTitle="Learning ressources"
               description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, earum."
             />
           </NavLink>
-          <NavLink to="/rewriting/ressources/external-ressources">
+          <NavLink to="/rewriting-website-rework/rewriting/ressources/external-ressources">
             <Ressource
               ressourceTitle="External ressources"
               description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, earum."

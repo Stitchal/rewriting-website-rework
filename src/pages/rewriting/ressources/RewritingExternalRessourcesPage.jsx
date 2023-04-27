@@ -15,16 +15,16 @@ const RewritingExternalRessourcesPage = () => {
   //Paths
   const rewritingPath = {
     name: "Rewriting",
-    path: "/rewriting",
+    path: "/rewriting-website-rework/rewriting",
   };
 
   const ressourcesPath = {
     name: "Ressources",
-    path: "/rewriting/ressources",
+    path: "/rewriting-website-rework/rewriting/ressources",
   };
   const externalRessourcesPath = {
     name: "External ressources",
-    path: "/rewriting/ressources/external-ressources",
+    path: "/rewriting-website-rework/rewriting/ressources/external-ressources",
   };
 
   const paths = [rewritingPath, ressourcesPath, externalRessourcesPath];

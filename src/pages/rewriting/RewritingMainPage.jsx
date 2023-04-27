@@ -14,7 +14,7 @@ const RewritingMainPage = () => {
 
   const rewritingPath = {
     name: "Rewriting",
-    path: "/rewriting",
+    path: "/rewriting-website-rework/rewriting",
   };
 
   const paths = [rewritingPath];

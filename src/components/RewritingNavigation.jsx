@@ -23,38 +23,38 @@ const RewritingNavigation = () => {
 
         <ul className={`nav-items ${isActive ? "active" : ""}`}>
           <NavLink
-            to="/rewriting"
+            to="/rewriting-website-rework/rewriting"
             className={`nav-link ${
-              location.pathname === "/rewriting" ? "selected" : ""
+              location.pathname === "/rewriting-website-rework/rewriting"
+                ? "selected"
+                : ""
             }`}
           >
             <li>Rewriting</li>
           </NavLink>
           <NavLink
-            to="/rewriting/software"
+            to="/rewriting-website-rework/rewriting/software"
             className={`nav-link ${
-              location.pathname === "/rewriting/software" ? "selected" : ""
+              location.pathname ===
+              "/rewriting-website-rework/rewriting/software"
+                ? "selected"
+                : ""
             }`}
           >
             <li>Software</li>
           </NavLink>
           <NavLink
-            to="/rewriting/ressources"
+            to="/rewriting-website-rework/rewriting/ressources"
             className={`nav-link ${
-              location.pathname === "/rewriting/ressources" ? "selected" : ""
+              location.pathname ===
+              "/rewriting-website-rework/rewriting/ressources"
+                ? "selected"
+                : ""
             }`}
           >
             <li>Ressources</li>
           </NavLink>
         </ul>
-        <div className="logos">
-          <a href="https://ifip-wg-rewriting.cs.ru.nl/">
-            <img src={logo_ifip} alt="" />
-          </a>
-          <a href="https://fscd-conference.org/" className="fscd-website">
-            <img src={logo_fscd} alt="logo fscd" />
-          </a>
-        </div>
       </div>
     </div>
   );

@@ -25,50 +25,86 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<SplashPage />} />
-        <Route path="/rewriting" element={<RewritingMainPage />} />
-        <Route path="/lambda-calculus" element={<LambdaCalculusMainPage />} />
-        <Route path="/logic" element={<LogicMainPage />} />
-        <Route path="/mailing-list" element={<MailingListPage />} />
-        <Route path="/open-problems" element={<OpenProblemsPage />} />
-        <Route path="/authors" element={<AuthorsPage />} />
         <Route
-          path="/industrial-applications"
+          path="/rewriting-website-rework/rewriting"
+          element={<RewritingMainPage />}
+        />
+        <Route
+          path="/rewriting-website-rework/lambda-calculus"
+          element={<LambdaCalculusMainPage />}
+        />
+        <Route
+          path="/rewriting-website-rework/logic"
+          element={<LogicMainPage />}
+        />
+        <Route
+          path="/rewriting-website-rework/mailing-list"
+          element={<MailingListPage />}
+        />
+        <Route
+          path="/rewriting-website-rework/open-problems"
+          element={<OpenProblemsPage />}
+        />
+        <Route
+          path="/rewriting-website-rework/authors"
+          element={<AuthorsPage />}
+        />
+        <Route
+          path="/rewriting-website-rework/industrial-applications"
           element={<IndustrialApplicationsPage />}
         />
-        <Route path="/intranet" element={<IntranetPage />} />
-        <Route path="/intranet/write-post" element={<IntranetWritePostPage />} />
-        <Route path="/login" element={<LoginPage />} />
-
-        <Route path="/rewriting/software" element={<RewritingSoftwarePage />} />
-        <Route path="/rewriting/mailing-list" element={<MailingListPage />} />
         <Route
-          path="/rewriting/ressources"
+          path="/rewriting-website-rework/intranet"
+          element={<IntranetPage />}
+        />
+        <Route
+          path="/rewriting-website-rework/intranet/write-post"
+          element={<IntranetWritePostPage />}
+        />
+        <Route path="/rewriting-website-rework/login" element={<LoginPage />} />
+
+        <Route
+          path="/rewriting-website-rework/rewriting/software"
+          element={<RewritingSoftwarePage />}
+        />
+        <Route
+          path="/rewriting-website-rework/rewriting/mailing-list"
+          element={<MailingListPage />}
+        />
+        <Route
+          path="/rewriting-website-rework/rewriting/ressources"
           element={<RewritingRessourcesPage />}
         />
         <Route
-          path="/rewriting/ressources/learning-ressources"
+          path="/rewriting-website-rework/rewriting/ressources/learning-ressources"
           element={<RewritingLearningRessourcesPage />}
         />
         <Route
-          path="/rewriting/ressources/learning-ressources/books"
+          path="/rewriting-website-rework/rewriting/ressources/learning-ressources/books"
           element={<RewritingBooksPage />}
         />
         <Route
-          path="/rewriting/ressources/learning-ressources/surveys"
+          path="/rewriting-website-rework/rewriting/ressources/learning-ressources/surveys"
           element={<RewritingSurveysPage />}
         />
         <Route
-          path="/rewriting/ressources/learning-ressources/courses"
+          path="/rewriting-website-rework/rewriting/ressources/learning-ressources/courses"
           element={<RewritingCoursesPage />}
         />
         <Route
-          path="/rewriting/ressources/external-ressources"
+          path="/rewriting-website-rework/rewriting/ressources/external-ressources"
           element={<RewritingExternalRessourcesPage />}
         />
 
         <Route path="/*" element={<SplashPageNavigation />} />
-        <Route path="/rewriting/*" element={<RewritingMainPage />} />
-        <Route path="/lambda-calculus/*" element={<LambdaCalculusMainPage />} />
+        <Route
+          path="/rewriting-website-rework/rewriting/*"
+          element={<RewritingMainPage />}
+        />
+        <Route
+          path="/rewriting-website-rework/lambda-calculus/*"
+          element={<LambdaCalculusMainPage />}
+        />
       </Routes>
     </BrowserRouter>
   );

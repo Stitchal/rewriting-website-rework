@@ -15,12 +15,12 @@ const RewritingSoftwarePage = () => {
   //Paths
   const rewritingPath = {
     name: "Rewriting",
-    path: "/rewriting",
+    path: "/rewriting-website-rework/rewriting",
   };
 
   const softwarePath = {
     name: "Software",
-    path: "/rewriting/software",
+    path: "/rewriting-website-rework/rewriting/software",
   };
 
   const paths = [rewritingPath, softwarePath];

@@ -10,27 +10,27 @@ const SplashPageNavigation = () => {
       </div>
       <div className="first-container">
         <div className="rewriting-container">
-          <NavLink to="/rewriting">Rewriting</NavLink>
+          <NavLink to="/rewriting-website-rework/rewriting">Rewriting</NavLink>
         </div>
         <div className="lambda-calculus-container">
-          <NavLink to="/lambda-calculus">Lambda Calculus</NavLink>
+          <NavLink to="/rewriting-website-rework/lambda-calculus">Lambda Calculus</NavLink>
         </div>
         <div className="logic-container">
-          <NavLink to="/logic">Logic</NavLink>
+          <NavLink to="/rewriting-website-rework/logic">Logic</NavLink>
         </div>
       </div>
       <div className="second-container">
         <div className="mailing-list-container">
-          <NavLink to="/mailing-list">Mailing list</NavLink>
+          <NavLink to="/rewriting-website-rework/mailing-list">Mailing list</NavLink>
         </div>
         <div className="open-problems-container">
-          <NavLink to="/open-problems">Open problems</NavLink>
+          <NavLink to="/rewriting-website-rework/open-problems">Open problems</NavLink>
         </div>
         <div className="authors-container">
-          <NavLink to="/authors">Authors</NavLink>
+          <NavLink to="/rewriting-website-rework/authors">Authors</NavLink>
         </div>
         <div className="industrial-applications-container">
-          <NavLink to="/industrial-applications">
+          <NavLink to="/rewriting-website-rework/industrial-applications">
             Industrial applications
           </NavLink>
         </div>

@@ -5,7 +5,7 @@ const Path = ({ paths }) => {
   return (
     <ul className="path-container">
       <li key="Home">
-        <NavLink key="Home" to="/" className="Home">
+        <NavLink key="Home" to="/rewriting-website-rework" className="Home">
           Home
         </NavLink>
       </li>

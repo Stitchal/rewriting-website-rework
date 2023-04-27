@@ -12,7 +12,7 @@ const MailingListPage = () => {
   ];
   const mailingListPath = {
     name: "Mailing List",
-    path: "/mailing-list",
+    path: "/rewriting-website-rework/mailing-list",
   };
 
   const paths = [mailingListPath];
